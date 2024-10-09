@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "No Comments",
+  "version": "1.0",
+  "description": "Hide the YouTube comments section on any YouTube video",
+
+  "icons": {
+    "150": "no-comments.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://youtube.com/*"
+      ]
+    }
+  ]
+}
